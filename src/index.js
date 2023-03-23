@@ -6,7 +6,7 @@ function updateTime() {
     losAngelesTime = moment().tz("America/Los_Angeles");
     losAngelesElementDate.innerHTML = losAngelesTime.format("MMMM Do YYYY");
     losAngelesElementTime.innerHTML = losAngelesTime.format(
-      "h:mm:ss [<small>] A [</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
 
@@ -17,7 +17,7 @@ function updateTime() {
     parisTime = moment().tz("Europe/Paris");
     parisElementDate.innerHTML = parisTime.format("MMMM Do YYYY");
     parisElementTime.innerHTML = parisTime.format(
-      "h:mm:ss [<small>] A [</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
   let canberraElement = document.querySelector("#canberra");
@@ -27,7 +27,7 @@ function updateTime() {
     canberraTime = moment().tz("Australia/Canberra");
     canberraElementDate.innerHTML = canberraTime.format("MMMM Do YYYY");
     canberraElementTime.innerHTML = canberraTime.format(
-      "h:mm:ss [<small>] A [</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
 }
@@ -46,10 +46,10 @@ function updateCity(event) {
             <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
           </div>
           <div class="time">${cityTime.format(
-            "h:mm:ss [<small>] A [</small>]"
+            "h:mm:ss [<small>]A[</small>]"
           )} </div>
         </div>
-        <a href="/">Back to home page 👇</a>`;
+        <a href="/">Back to home page </a>`;
 }
 
 updateTime();
